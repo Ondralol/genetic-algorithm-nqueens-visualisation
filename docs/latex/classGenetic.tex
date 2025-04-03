@@ -1,0 +1,96 @@
+\hypertarget{classGenetic}{}\doxysection{Genetic Class Reference}
+\label{classGenetic}\index{Genetic@{Genetic}}
+
+
+{\ttfamily \#include $<$genetic\+Algorithm.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGenetic_afca0f08ca2f2df7561c66698063183ed}{Genetic}} (size\+\_\+t N)
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \mbox{\hyperlink{classGenetic_ad60d7cc52f498b5c49afd8b2fc2a6346}{generate\+Individual}} ()
+\item 
+std\+::pair$<$ std\+::vector$<$ size\+\_\+t $>$, std\+::vector$<$ size\+\_\+t $>$ $>$ \mbox{\hyperlink{classGenetic_a50b6b6a611921e8118fb6e9d02f25493}{crossover\+Individuals}} (std\+::vector$<$ size\+\_\+t $>$ individual1, std\+::vector$<$ size\+\_\+t $>$ individual2)
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \mbox{\hyperlink{classGenetic_a5546753fd45cf859a0be083814861904}{mutate\+Individual}} (std\+::vector$<$ size\+\_\+t $>$ individual)
+\item 
+\mbox{\hyperlink{classGeneration}{Generation}} \mbox{\hyperlink{classGenetic_ae970a20ef4c16f70ad78ffdaa22eccf6}{get\+Nth\+Generation}} (size\+\_\+t N)
+\item 
+size\+\_\+t \mbox{\hyperlink{classGenetic_a0274aa96459f68fdb66099e1f62dbf94}{get\+Generations\+Count}} (void)
+\item 
+bool \mbox{\hyperlink{classGenetic_accfd2bd60c985e8f5930c9bc65f5ccaf}{is\+Finished}} ()
+\item 
+bool \mbox{\hyperlink{classGenetic_a0263ad376968126816e39cdc04c98ebd}{run}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classGenetic}{Genetic}} algorithm that solves N-\/\+Queens problem 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGenetic_afca0f08ca2f2df7561c66698063183ed}\label{classGenetic_afca0f08ca2f2df7561c66698063183ed}} 
+\index{Genetic@{Genetic}!Genetic@{Genetic}}
+\index{Genetic@{Genetic}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{Genetic()}{Genetic()}}
+{\footnotesize\ttfamily Genetic\+::\+Genetic (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{N }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGenetic_a50b6b6a611921e8118fb6e9d02f25493}\label{classGenetic_a50b6b6a611921e8118fb6e9d02f25493}} 
+\index{Genetic@{Genetic}!crossoverIndividuals@{crossoverIndividuals}}
+\index{crossoverIndividuals@{crossoverIndividuals}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{crossoverIndividuals()}{crossoverIndividuals()}}
+{\footnotesize\ttfamily std\+::pair$<$ std\+::vector$<$ size\+\_\+t $>$, std\+::vector$<$ size\+\_\+t $>$ $>$ Genetic\+::crossover\+Individuals (\begin{DoxyParamCaption}\item[{std\+::vector$<$ size\+\_\+t $>$}]{individual1,  }\item[{std\+::vector$<$ size\+\_\+t $>$}]{individual2 }\end{DoxyParamCaption})}
+
+Crossover two individuals (combines their genes) with CROSSOVER\+\_\+\+RATE probability ~\newline
+
+
+Crossover two individuals (combines their genes) with CROSSOVER\+\_\+\+RATE probablity \mbox{\Hypertarget{classGenetic_ad60d7cc52f498b5c49afd8b2fc2a6346}\label{classGenetic_ad60d7cc52f498b5c49afd8b2fc2a6346}} 
+\index{Genetic@{Genetic}!generateIndividual@{generateIndividual}}
+\index{generateIndividual@{generateIndividual}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{generateIndividual()}{generateIndividual()}}
+{\footnotesize\ttfamily std\+::vector$<$ size\+\_\+t $>$ Genetic\+::generate\+Individual (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Generate individual (random position of queens on chess board) \mbox{\Hypertarget{classGenetic_a0274aa96459f68fdb66099e1f62dbf94}\label{classGenetic_a0274aa96459f68fdb66099e1f62dbf94}} 
+\index{Genetic@{Genetic}!getGenerationsCount@{getGenerationsCount}}
+\index{getGenerationsCount@{getGenerationsCount}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{getGenerationsCount()}{getGenerationsCount()}}
+{\footnotesize\ttfamily size\+\_\+t Genetic\+::get\+Generations\+Count (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Returns current mutatio Returns number of generations
+
+Returns number of generations \mbox{\Hypertarget{classGenetic_ae970a20ef4c16f70ad78ffdaa22eccf6}\label{classGenetic_ae970a20ef4c16f70ad78ffdaa22eccf6}} 
+\index{Genetic@{Genetic}!getNthGeneration@{getNthGeneration}}
+\index{getNthGeneration@{getNthGeneration}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{getNthGeneration()}{getNthGeneration()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classGeneration}{Generation}} Genetic\+::get\+Nth\+Generation (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{N }\end{DoxyParamCaption})}
+
+Returns Nth generation \mbox{\Hypertarget{classGenetic_accfd2bd60c985e8f5930c9bc65f5ccaf}\label{classGenetic_accfd2bd60c985e8f5930c9bc65f5ccaf}} 
+\index{Genetic@{Genetic}!isFinished@{isFinished}}
+\index{isFinished@{isFinished}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{isFinished()}{isFinished()}}
+{\footnotesize\ttfamily bool Genetic\+::is\+Finished (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+Returns true if calculation is finished \mbox{\Hypertarget{classGenetic_a5546753fd45cf859a0be083814861904}\label{classGenetic_a5546753fd45cf859a0be083814861904}} 
+\index{Genetic@{Genetic}!mutateIndividual@{mutateIndividual}}
+\index{mutateIndividual@{mutateIndividual}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{mutateIndividual()}{mutateIndividual()}}
+{\footnotesize\ttfamily std\+::vector$<$ size\+\_\+t $>$ Genetic\+::mutate\+Individual (\begin{DoxyParamCaption}\item[{std\+::vector$<$ size\+\_\+t $>$}]{individual }\end{DoxyParamCaption})}
+
+Mutate individual with MUTATION\+\_\+\+RATE probability
+
+Mutate individual with MUTATION\+\_\+\+RATE probability. For each gene calculate probability of mutation, if mutation should happen generate gene in range \mbox{[}0, m\+\_\+dimension -\/ 1\mbox{]}, else keep the gene ~\newline
+ \mbox{\Hypertarget{classGenetic_a0263ad376968126816e39cdc04c98ebd}\label{classGenetic_a0263ad376968126816e39cdc04c98ebd}} 
+\index{Genetic@{Genetic}!run@{run}}
+\index{run@{run}!Genetic@{Genetic}}
+\doxysubsubsection{\texorpdfstring{run()}{run()}}
+{\footnotesize\ttfamily bool Genetic\+::run (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Runs the whole genetic algorithm 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{geneticAlgorithm_8hpp}{genetic\+Algorithm.\+hpp}}\item 
+src/\mbox{\hyperlink{geneticAlgorithm_8cpp}{genetic\+Algorithm.\+cpp}}\end{DoxyCompactItemize}

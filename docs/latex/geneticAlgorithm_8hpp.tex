@@ -1,0 +1,119 @@
+\hypertarget{geneticAlgorithm_8hpp}{}\doxysection{src/genetic\+Algorithm.hpp File Reference}
+\label{geneticAlgorithm_8hpp}\index{src/geneticAlgorithm.hpp@{src/geneticAlgorithm.hpp}}
+
+
+\mbox{\hyperlink{classGenetic}{Genetic}} algorithm class for solving N-\/queens problem.  
+
+
+{\ttfamily \#include $<$vector$>$}\newline
+{\ttfamily \#include $<$map$>$}\newline
+{\ttfamily \#include $<$cstddef$>$}\newline
+{\ttfamily \#include $<$mutex$>$}\newline
+{\ttfamily \#include $<$atomic$>$}\newline
+Include dependency graph for genetic\+Algorithm.\+hpp\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{geneticAlgorithm_8hpp__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{geneticAlgorithm_8hpp__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsection*{Classes}
+\begin{DoxyCompactItemize}
+\item 
+class \mbox{\hyperlink{classGeneration}{Generation}}
+\item 
+class \mbox{\hyperlink{classGenetic}{Genetic}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{geneticAlgorithm_8hpp_a53959fa81befcc4e7290a0b5581cbe09}{POPULATION\+\_\+\+SIZE}}~500
+\item 
+\#define \mbox{\hyperlink{geneticAlgorithm_8hpp_a516d0c5670fad64f0c2d47a893c695a4}{GENERATIONS}}~10000
+\item 
+\#define \mbox{\hyperlink{geneticAlgorithm_8hpp_ad5d6a5ecac5d5228e33866f91bcf3026}{CROSSOVER\+\_\+\+RATE}}~0.\+85f
+\item 
+\#define \mbox{\hyperlink{geneticAlgorithm_8hpp_a68b861a1ca6338bb98794afe9c4e5d5a}{MUTATION\+\_\+\+RATE}}~0.\+0235f
+\item 
+\#define \mbox{\hyperlink{geneticAlgorithm_8hpp_a3378c2a5120332f30867f162b0285429}{PREVIOUS\+\_\+\+GEN\+\_\+\+COUNT}}~25
+\item 
+\#define \mbox{\hyperlink{geneticAlgorithm_8hpp_a1a127b7ab9d27e7adef31b0aed207511}{PREVIOUS\+\_\+\+GEN\+\_\+\+CROSSOVER\+\_\+\+COUNT}}~125
+\item 
+\#define \mbox{\hyperlink{geneticAlgorithm_8hpp_a4795a6c0c61cad90658d73b3eef3371c}{TOURNAMENT\+\_\+\+SIZE}}~10
+\end{DoxyCompactItemize}
+\doxysubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+using \mbox{\hyperlink{geneticAlgorithm_8hpp_ab909134f911d70d176fd98aa928b2230}{Individual}} = std\+::pair$<$ std\+::vector$<$ size\+\_\+t $>$, double $>$
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+\mbox{\hyperlink{classGenetic}{Genetic}} algorithm class for solving N-\/queens problem. 
+
+\begin{DoxyAuthor}{Author}
+Ondrej 
+\end{DoxyAuthor}
+
+
+\doxysubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{geneticAlgorithm_8hpp_ad5d6a5ecac5d5228e33866f91bcf3026}\label{geneticAlgorithm_8hpp_ad5d6a5ecac5d5228e33866f91bcf3026}} 
+\index{geneticAlgorithm.hpp@{geneticAlgorithm.hpp}!CROSSOVER\_RATE@{CROSSOVER\_RATE}}
+\index{CROSSOVER\_RATE@{CROSSOVER\_RATE}!geneticAlgorithm.hpp@{geneticAlgorithm.hpp}}
+\doxysubsubsection{\texorpdfstring{CROSSOVER\_RATE}{CROSSOVER\_RATE}}
+{\footnotesize\ttfamily \#define CROSSOVER\+\_\+\+RATE~0.\+85f}
+
+\mbox{\Hypertarget{geneticAlgorithm_8hpp_a516d0c5670fad64f0c2d47a893c695a4}\label{geneticAlgorithm_8hpp_a516d0c5670fad64f0c2d47a893c695a4}} 
+\index{geneticAlgorithm.hpp@{geneticAlgorithm.hpp}!GENERATIONS@{GENERATIONS}}
+\index{GENERATIONS@{GENERATIONS}!geneticAlgorithm.hpp@{geneticAlgorithm.hpp}}
+\doxysubsubsection{\texorpdfstring{GENERATIONS}{GENERATIONS}}
+{\footnotesize\ttfamily \#define GENERATIONS~10000}
+
+\mbox{\Hypertarget{geneticAlgorithm_8hpp_a68b861a1ca6338bb98794afe9c4e5d5a}\label{geneticAlgorithm_8hpp_a68b861a1ca6338bb98794afe9c4e5d5a}} 
+\index{geneticAlgorithm.hpp@{geneticAlgorithm.hpp}!MUTATION\_RATE@{MUTATION\_RATE}}
+\index{MUTATION\_RATE@{MUTATION\_RATE}!geneticAlgorithm.hpp@{geneticAlgorithm.hpp}}
+\doxysubsubsection{\texorpdfstring{MUTATION\_RATE}{MUTATION\_RATE}}
+{\footnotesize\ttfamily \#define MUTATION\+\_\+\+RATE~0.\+0235f}
+
+\mbox{\Hypertarget{geneticAlgorithm_8hpp_a53959fa81befcc4e7290a0b5581cbe09}\label{geneticAlgorithm_8hpp_a53959fa81befcc4e7290a0b5581cbe09}} 
+\index{geneticAlgorithm.hpp@{geneticAlgorithm.hpp}!POPULATION\_SIZE@{POPULATION\_SIZE}}
+\index{POPULATION\_SIZE@{POPULATION\_SIZE}!geneticAlgorithm.hpp@{geneticAlgorithm.hpp}}
+\doxysubsubsection{\texorpdfstring{POPULATION\_SIZE}{POPULATION\_SIZE}}
+{\footnotesize\ttfamily \#define POPULATION\+\_\+\+SIZE~500}
+
+\mbox{\Hypertarget{geneticAlgorithm_8hpp_a3378c2a5120332f30867f162b0285429}\label{geneticAlgorithm_8hpp_a3378c2a5120332f30867f162b0285429}} 
+\index{geneticAlgorithm.hpp@{geneticAlgorithm.hpp}!PREVIOUS\_GEN\_COUNT@{PREVIOUS\_GEN\_COUNT}}
+\index{PREVIOUS\_GEN\_COUNT@{PREVIOUS\_GEN\_COUNT}!geneticAlgorithm.hpp@{geneticAlgorithm.hpp}}
+\doxysubsubsection{\texorpdfstring{PREVIOUS\_GEN\_COUNT}{PREVIOUS\_GEN\_COUNT}}
+{\footnotesize\ttfamily \#define PREVIOUS\+\_\+\+GEN\+\_\+\+COUNT~25}
+
+\mbox{\Hypertarget{geneticAlgorithm_8hpp_a1a127b7ab9d27e7adef31b0aed207511}\label{geneticAlgorithm_8hpp_a1a127b7ab9d27e7adef31b0aed207511}} 
+\index{geneticAlgorithm.hpp@{geneticAlgorithm.hpp}!PREVIOUS\_GEN\_CROSSOVER\_COUNT@{PREVIOUS\_GEN\_CROSSOVER\_COUNT}}
+\index{PREVIOUS\_GEN\_CROSSOVER\_COUNT@{PREVIOUS\_GEN\_CROSSOVER\_COUNT}!geneticAlgorithm.hpp@{geneticAlgorithm.hpp}}
+\doxysubsubsection{\texorpdfstring{PREVIOUS\_GEN\_CROSSOVER\_COUNT}{PREVIOUS\_GEN\_CROSSOVER\_COUNT}}
+{\footnotesize\ttfamily \#define PREVIOUS\+\_\+\+GEN\+\_\+\+CROSSOVER\+\_\+\+COUNT~125}
+
+\mbox{\Hypertarget{geneticAlgorithm_8hpp_a4795a6c0c61cad90658d73b3eef3371c}\label{geneticAlgorithm_8hpp_a4795a6c0c61cad90658d73b3eef3371c}} 
+\index{geneticAlgorithm.hpp@{geneticAlgorithm.hpp}!TOURNAMENT\_SIZE@{TOURNAMENT\_SIZE}}
+\index{TOURNAMENT\_SIZE@{TOURNAMENT\_SIZE}!geneticAlgorithm.hpp@{geneticAlgorithm.hpp}}
+\doxysubsubsection{\texorpdfstring{TOURNAMENT\_SIZE}{TOURNAMENT\_SIZE}}
+{\footnotesize\ttfamily \#define TOURNAMENT\+\_\+\+SIZE~10}
+
+
+
+\doxysubsection{Typedef Documentation}
+\mbox{\Hypertarget{geneticAlgorithm_8hpp_ab909134f911d70d176fd98aa928b2230}\label{geneticAlgorithm_8hpp_ab909134f911d70d176fd98aa928b2230}} 
+\index{geneticAlgorithm.hpp@{geneticAlgorithm.hpp}!Individual@{Individual}}
+\index{Individual@{Individual}!geneticAlgorithm.hpp@{geneticAlgorithm.hpp}}
+\doxysubsubsection{\texorpdfstring{Individual}{Individual}}
+{\footnotesize\ttfamily using \mbox{\hyperlink{geneticAlgorithm_8hpp_ab909134f911d70d176fd98aa928b2230}{Individual}} =  std\+::pair$<$std\+::vector$<$size\+\_\+t$>$, double$>$}
+

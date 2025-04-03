@@ -1,0 +1,108 @@
+\hypertarget{classGeneration}{}\doxysection{Generation Class Reference}
+\label{classGeneration}\index{Generation@{Generation}}
+
+
+{\ttfamily \#include $<$genetic\+Algorithm.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classGeneration_a1c6a7a42fec08a1f76b754868ed311a3}{Generation}} (size\+\_\+t index, float mutation\+Rate, float crossover\+Rate)
+\item 
+size\+\_\+t \mbox{\hyperlink{classGeneration_a039ba611f10a7c48b63da5ee22c9c9c0}{attack\+Count}} (size\+\_\+t row, std\+::vector$<$ size\+\_\+t $>$ \&individual)
+\item 
+double \mbox{\hyperlink{classGeneration_ac939b5bb5e8f17023f9d0d4f966728a8}{get\+Fitness}} (std\+::vector$<$ size\+\_\+t $>$ \&individual)
+\item 
+void \mbox{\hyperlink{classGeneration_add52efda79b246bfb51928cd2a791458}{add\+Individual}} (std\+::vector$<$ size\+\_\+t $>$ individual)
+\item 
+double \mbox{\hyperlink{classGeneration_abed841f09a3e756052db8a265d78c8a6}{fitness\+Average}} (void)
+\item 
+double \mbox{\hyperlink{classGeneration_a1537d8cc35ddeeb7d895aaeba70ab57f}{fitness\+Best}} (void)
+\item 
+std\+::vector$<$ std\+::vector$<$ size\+\_\+t $>$ $>$ \mbox{\hyperlink{classGeneration_ad073abe3a362dd24dbc7072623dc068f}{get\+NBest}} (size\+\_\+t n)
+\item 
+float \mbox{\hyperlink{classGeneration_a195c96f4c90377e084008162886fc758}{get\+Mutation\+Rate}} (void)
+\item 
+float \mbox{\hyperlink{classGeneration_a9fbf711dffaa9ca20a5e5ea8a6f74058}{get\+Crossover\+Rate}} (void)
+\item 
+std\+::vector$<$ size\+\_\+t $>$ \mbox{\hyperlink{classGeneration_ad74dc0fcf5ae02ea5165be666e91a978}{get\+Random\+Tournament}} (size\+\_\+t n)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+Represents one generation 
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classGeneration_a1c6a7a42fec08a1f76b754868ed311a3}\label{classGeneration_a1c6a7a42fec08a1f76b754868ed311a3}} 
+\index{Generation@{Generation}!Generation@{Generation}}
+\index{Generation@{Generation}!Generation@{Generation}}
+\doxysubsubsection{\texorpdfstring{Generation()}{Generation()}}
+{\footnotesize\ttfamily Generation\+::\+Generation (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{index,  }\item[{float}]{mutation\+Rate,  }\item[{float}]{crossover\+Rate }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classGeneration_add52efda79b246bfb51928cd2a791458}\label{classGeneration_add52efda79b246bfb51928cd2a791458}} 
+\index{Generation@{Generation}!addIndividual@{addIndividual}}
+\index{addIndividual@{addIndividual}!Generation@{Generation}}
+\doxysubsubsection{\texorpdfstring{addIndividual()}{addIndividual()}}
+{\footnotesize\ttfamily void Generation\+::add\+Individual (\begin{DoxyParamCaption}\item[{std\+::vector$<$ size\+\_\+t $>$}]{individual }\end{DoxyParamCaption})}
+
+Adds individual to the generation \mbox{\Hypertarget{classGeneration_a039ba611f10a7c48b63da5ee22c9c9c0}\label{classGeneration_a039ba611f10a7c48b63da5ee22c9c9c0}} 
+\index{Generation@{Generation}!attackCount@{attackCount}}
+\index{attackCount@{attackCount}!Generation@{Generation}}
+\doxysubsubsection{\texorpdfstring{attackCount()}{attackCount()}}
+{\footnotesize\ttfamily size\+\_\+t Generation\+::attack\+Count (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{row,  }\item[{std\+::vector$<$ size\+\_\+t $>$ \&}]{individual }\end{DoxyParamCaption})}
+
+Returns number of positions that queen can be attack from \mbox{\Hypertarget{classGeneration_abed841f09a3e756052db8a265d78c8a6}\label{classGeneration_abed841f09a3e756052db8a265d78c8a6}} 
+\index{Generation@{Generation}!fitnessAverage@{fitnessAverage}}
+\index{fitnessAverage@{fitnessAverage}!Generation@{Generation}}
+\doxysubsubsection{\texorpdfstring{fitnessAverage()}{fitnessAverage()}}
+{\footnotesize\ttfamily double Generation\+::fitness\+Average (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Gets the average fitness \mbox{\Hypertarget{classGeneration_a1537d8cc35ddeeb7d895aaeba70ab57f}\label{classGeneration_a1537d8cc35ddeeb7d895aaeba70ab57f}} 
+\index{Generation@{Generation}!fitnessBest@{fitnessBest}}
+\index{fitnessBest@{fitnessBest}!Generation@{Generation}}
+\doxysubsubsection{\texorpdfstring{fitnessBest()}{fitnessBest()}}
+{\footnotesize\ttfamily double Generation\+::fitness\+Best (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Gets the best fitness (could be calculated continuouly i guess, but this will do for now \mbox{\Hypertarget{classGeneration_a9fbf711dffaa9ca20a5e5ea8a6f74058}\label{classGeneration_a9fbf711dffaa9ca20a5e5ea8a6f74058}} 
+\index{Generation@{Generation}!getCrossoverRate@{getCrossoverRate}}
+\index{getCrossoverRate@{getCrossoverRate}!Generation@{Generation}}
+\doxysubsubsection{\texorpdfstring{getCrossoverRate()}{getCrossoverRate()}}
+{\footnotesize\ttfamily float Generation\+::get\+Crossover\+Rate (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Returns generations crossover rate \mbox{\Hypertarget{classGeneration_ac939b5bb5e8f17023f9d0d4f966728a8}\label{classGeneration_ac939b5bb5e8f17023f9d0d4f966728a8}} 
+\index{Generation@{Generation}!getFitness@{getFitness}}
+\index{getFitness@{getFitness}!Generation@{Generation}}
+\doxysubsubsection{\texorpdfstring{getFitness()}{getFitness()}}
+{\footnotesize\ttfamily double Generation\+::get\+Fitness (\begin{DoxyParamCaption}\item[{std\+::vector$<$ size\+\_\+t $>$ \&}]{individual }\end{DoxyParamCaption})}
+
+Gets fitness for individual
+
+Gets fitness score for individual. Works such that fitness 0 means that no queens attack each other and N means that N queens attack each other \mbox{\Hypertarget{classGeneration_a195c96f4c90377e084008162886fc758}\label{classGeneration_a195c96f4c90377e084008162886fc758}} 
+\index{Generation@{Generation}!getMutationRate@{getMutationRate}}
+\index{getMutationRate@{getMutationRate}!Generation@{Generation}}
+\doxysubsubsection{\texorpdfstring{getMutationRate()}{getMutationRate()}}
+{\footnotesize\ttfamily float Generation\+::get\+Mutation\+Rate (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Returns generations mutation rate \mbox{\Hypertarget{classGeneration_ad073abe3a362dd24dbc7072623dc068f}\label{classGeneration_ad073abe3a362dd24dbc7072623dc068f}} 
+\index{Generation@{Generation}!getNBest@{getNBest}}
+\index{getNBest@{getNBest}!Generation@{Generation}}
+\doxysubsubsection{\texorpdfstring{getNBest()}{getNBest()}}
+{\footnotesize\ttfamily std\+::vector$<$ std\+::vector$<$ size\+\_\+t $>$ $>$ Generation\+::get\+NBest (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+Returns N best individuals from generation \mbox{\Hypertarget{classGeneration_ad74dc0fcf5ae02ea5165be666e91a978}\label{classGeneration_ad74dc0fcf5ae02ea5165be666e91a978}} 
+\index{Generation@{Generation}!getRandomTournament@{getRandomTournament}}
+\index{getRandomTournament@{getRandomTournament}!Generation@{Generation}}
+\doxysubsubsection{\texorpdfstring{getRandomTournament()}{getRandomTournament()}}
+{\footnotesize\ttfamily std\+::vector$<$ size\+\_\+t $>$ Generation\+::get\+Random\+Tournament (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{n }\end{DoxyParamCaption})}
+
+Finds n random individuals and returns the one with the highest fitness
+
+Find two random individuals and returns the one with higher fitness 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{geneticAlgorithm_8hpp}{genetic\+Algorithm.\+hpp}}\item 
+src/\mbox{\hyperlink{geneticAlgorithm_8cpp}{genetic\+Algorithm.\+cpp}}\end{DoxyCompactItemize}

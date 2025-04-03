@@ -1,0 +1,69 @@
+\hypertarget{classBoardVisualisation}{}\doxysection{Board\+Visualisation Class Reference}
+\label{classBoardVisualisation}\index{BoardVisualisation@{BoardVisualisation}}
+
+
+{\ttfamily \#include $<$board\+Visualisation.\+hpp$>$}
+
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{classBoardVisualisation_aa516fcb7cbab2948e704bef3b82286a3}{Board\+Visualisation}} (size\+\_\+t N, unsigned screen\+Width, unsigned screen\+Height)
+\item 
+void \mbox{\hyperlink{classBoardVisualisation_a5b97ce0e232f3d19fa79f490aaae107a}{process\+Input}} (sf\+::\+Event \&event)
+\item 
+void \mbox{\hyperlink{classBoardVisualisation_afffc1e930842c3e2c65661906c01862a}{main\+Loop}} (void)
+\item 
+std\+::shared\+\_\+ptr$<$ sf\+::\+Texture $>$ \mbox{\hyperlink{classBoardVisualisation_a10b237efe301d5c9a16a06cae74c2d6c}{load\+Texture}} (std\+::string filename)
+\item 
+void \mbox{\hyperlink{classBoardVisualisation_a8e0d4816cbf99eb6e24daef55df98a29}{show\+Board}} (void)
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{classBoardVisualisation_aa516fcb7cbab2948e704bef3b82286a3}\label{classBoardVisualisation_aa516fcb7cbab2948e704bef3b82286a3}} 
+\index{BoardVisualisation@{BoardVisualisation}!BoardVisualisation@{BoardVisualisation}}
+\index{BoardVisualisation@{BoardVisualisation}!BoardVisualisation@{BoardVisualisation}}
+\doxysubsubsection{\texorpdfstring{BoardVisualisation()}{BoardVisualisation()}}
+{\footnotesize\ttfamily Board\+Visualisation\+::\+Board\+Visualisation (\begin{DoxyParamCaption}\item[{size\+\_\+t}]{N,  }\item[{unsigned}]{screen\+Width,  }\item[{unsigned}]{screen\+Height }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classBoardVisualisation_a10b237efe301d5c9a16a06cae74c2d6c}\label{classBoardVisualisation_a10b237efe301d5c9a16a06cae74c2d6c}} 
+\index{BoardVisualisation@{BoardVisualisation}!loadTexture@{loadTexture}}
+\index{loadTexture@{loadTexture}!BoardVisualisation@{BoardVisualisation}}
+\doxysubsubsection{\texorpdfstring{loadTexture()}{loadTexture()}}
+{\footnotesize\ttfamily std\+::shared\+\_\+ptr$<$ sf\+::\+Texture $>$ Board\+Visualisation\+::load\+Texture (\begin{DoxyParamCaption}\item[{std\+::string}]{filename }\end{DoxyParamCaption})}
+
+Loads texture from cache/file \mbox{\Hypertarget{classBoardVisualisation_afffc1e930842c3e2c65661906c01862a}\label{classBoardVisualisation_afffc1e930842c3e2c65661906c01862a}} 
+\index{BoardVisualisation@{BoardVisualisation}!mainLoop@{mainLoop}}
+\index{mainLoop@{mainLoop}!BoardVisualisation@{BoardVisualisation}}
+\doxysubsubsection{\texorpdfstring{mainLoop()}{mainLoop()}}
+{\footnotesize\ttfamily void Board\+Visualisation\+::main\+Loop (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+The main visualisation loop
+
+The main loop \mbox{\Hypertarget{classBoardVisualisation_a5b97ce0e232f3d19fa79f490aaae107a}\label{classBoardVisualisation_a5b97ce0e232f3d19fa79f490aaae107a}} 
+\index{BoardVisualisation@{BoardVisualisation}!processInput@{processInput}}
+\index{processInput@{processInput}!BoardVisualisation@{BoardVisualisation}}
+\doxysubsubsection{\texorpdfstring{processInput()}{processInput()}}
+{\footnotesize\ttfamily void Board\+Visualisation\+::process\+Input (\begin{DoxyParamCaption}\item[{sf\+::\+Event \&}]{event }\end{DoxyParamCaption})}
+
+Processes the user input during visualisation
+
+Processes all user input Close window if ESC is pressed
+
+Pause animation if SPACE is pressed\mbox{\Hypertarget{classBoardVisualisation_a8e0d4816cbf99eb6e24daef55df98a29}\label{classBoardVisualisation_a8e0d4816cbf99eb6e24daef55df98a29}} 
+\index{BoardVisualisation@{BoardVisualisation}!showBoard@{showBoard}}
+\index{showBoard@{showBoard}!BoardVisualisation@{BoardVisualisation}}
+\doxysubsubsection{\texorpdfstring{showBoard()}{showBoard()}}
+{\footnotesize\ttfamily void Board\+Visualisation\+::show\+Board (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Displays the whole chess board
+
+Displays the whole board 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+src/\mbox{\hyperlink{boardVisualisation_8hpp}{board\+Visualisation.\+hpp}}\item 
+src/\mbox{\hyperlink{boardVisualisation_8cpp}{board\+Visualisation.\+cpp}}\end{DoxyCompactItemize}
