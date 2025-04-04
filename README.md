@@ -4,7 +4,7 @@
 This program visualises the steps of genetic algorithm to solve N-Queens problem. You can visualise the positions of the queens on the chess board as well the cureent mutation and crossover rate and many other stats.
 
 ## Showcase
-<img src="assets/graph1.gif" alt="Program Showcase 1" height="400"/>
+<img src="assets/example.gif" alt="Program Showcase 1" height="400"/>
 
 ## Features
 - **Custom board size**: Change the board size to experiment with different board sizes
