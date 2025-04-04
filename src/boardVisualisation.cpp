@@ -12,6 +12,7 @@
 #include <random>
 #include <thread>
 #include <sstream>
+#include <functional>
 
 /** Processes all user input */
 void BoardVisualisation::processInput(sf::Event & event)
