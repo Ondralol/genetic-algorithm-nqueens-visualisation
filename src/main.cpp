@@ -1,5 +1,5 @@
 /**
- * @file main.pp
+ * @file main.cpp
  * @author Ondrej
  * @brief Main function that parses input arguments and calls other functions/metods
 */
