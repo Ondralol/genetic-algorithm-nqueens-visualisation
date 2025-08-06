@@ -131,7 +131,7 @@ float Generation::getCrossoverRate(void)
 }
 
 
-/** Find two random individuals and returns the one with higher fitness */
+/** Find n random individuals and returns the one with the best fitness */
 std::vector<size_t> Generation::getRandomTournament(size_t n)
 {
   if (m_individuals.size() == 0)
@@ -336,7 +336,7 @@ bool Genetic::run(void)
     }
 
 
-    // Add the rest of the individuals
+    // Add the rest of the individuals to the population using Tournament method
     for (int j = 0; j < (POPULATION_SIZE - 2 * PREVIOUS_GEN_COUNT - 2 * (PREVIOUS_GEN_CROSSOVER_COUNT / 2)); j ++)
     {
       newIndividuals = this -> crossoverIndividuals(prevGen.getRandomTournament(TOURNAMENT_SIZE), prevGen.getRandomTournament(TOURNAMENT_SIZE));
